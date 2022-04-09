@@ -1,0 +1,203 @@
+.form_container {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background-color: #E5E4E4;
+}
+
+.Form {
+    align-items: center;
+    justify-content: center; 
+    width: 90%;
+    padding-left: 100px;
+}
+
+h1.hire__text {
+    text-align: center;
+    font-size: 60px;
+}
+
+p.hire__text{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(29,29,36,.75);
+    font-weight: 400;
+}
+
+.contact__meta {
+    margin: 20px 0;  
+}
+
+.p1{
+    font-size: 8px;
+    color: red;
+}
+
+.Form1{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;   
+}
+
+.Form2{
+    display: grid; 
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+
+.WrapperGrid{  
+    margin-bottom: 15px;
+}
+
+
+.Input1{
+    border: 1px solid #009999; 
+    padding: 1em; 
+    width: 80%;
+    border-radius: 7px;
+}
+
+.Input2{
+    border: 1px solid #009999; 
+    padding: 1em; 
+    width: 90%;
+    border-radius: 7px;
+}
+
+.Textarea{
+    border: 1px solid #009999;
+    border-radius: 7px;
+    padding: 1.4em; 
+    width: 90%; 
+}
+
+.Label{
+  display: block; 
+}
+
+.StyledButton{
+    background: #009999;
+    border-radius: 30px;
+    color: #fff; 
+    padding: 1em; 
+    text-transform: uppercase; 
+    width: 20%;  
+}
+/* #08923B */
+.StyledButton:hover{
+    background: #08923B;
+    color: #fff; 
+    outline: 0; 
+    transition: background-color 2s ease-out;  
+}
+
+
+.StyledButton:disabled:hover {
+    background-color: blue;
+    color: var(--green) !important;
+    cursor: wait;
+}
+
+
+.errorMessage {
+    color: rgb(253, 90, 90);
+    font-size: 14px;
+    margin: 0;
+    padding: 28px;
+}
+
+#notifyToast {
+    color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    margin-left: 75px;
+    background-color: #27B312;
+}
+
+@media screen and (max-width: 960px) {
+
+    .Form {
+        padding-left: 70px;
+    }
+    
+    h1.hire__text {
+        font-size: 50px;
+    }
+
+    p.hire__text{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+   
+    .Form {
+        width: 90%;
+        padding-left: 1px;
+    }
+
+    h1.hire__text {
+        font-size: 40px;
+    }
+    
+    p.hire__text{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    .Form1{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 14px;
+    }
+    
+    .Form2{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 14px;
+    }
+      
+    .Input1{
+        width: 100%;
+    }
+
+    .Input2{
+        width: 100%;
+    }
+
+    .Textarea{
+        width: 100%; 
+    }
+
+    .StyledButton{
+        width: 25%;  
+    }
+  
+    .errorMessage {
+        font-size: 10px;
+        margin: 0;
+        padding: 28px;
+    }
+    
+    #notifyToast {
+        width: 100px;
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h1.hire__text {
+        font-size: 25px;
+    }
+    
+    p.hire__text{
+        font-size: 12px;
+        line-height: 25px;
+    }   
+}
+

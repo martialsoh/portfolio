@@ -1,0 +1,122 @@
+.footer-container {
+  background-color: #242424;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.footer-subscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  color: #fff;
+}
+
+.footer-subscription > p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.footer-subscription-heading {
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.footer-subscription-text {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+
+
+.social-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+
+.social-menu ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.social-menu ul li .fa {
+  line-height: 50px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all .4s ease-in-out;
+}
+
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid;
+  border-color: #009999;
+  /* background-color: white; */
+  background-color: transparent;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0,0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.zoom-social_icons-list__link {
+  text-align: center;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: rgba(212, 45, 212, 0.788);
+}
+.social-menu ul li:nth-child(6) a:hover {
+  background-color: #0077B5;
+}
+
+@media screen and (max-width: 480px) {
+  .social-menu ul li a {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .social-menu ul li .fa {
+    line-height: 38px;
+    font-size: 1.1rem;
+  }
+
+}

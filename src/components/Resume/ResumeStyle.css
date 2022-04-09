@@ -1,0 +1,54 @@
+  .resumeBox {
+    width: 90%;
+  
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    padding: 40px 50px;  
+  }
+
+  .resumeBox strong{
+    color: rgb(63, 63, 201);
+    font-size: 1.5em;
+  }
+
+  .resumeBox ul li::marker{
+    color: rgb(15, 2, 2);
+    font-size: 1.5em;
+  }
+
+  .resumeBox ul{
+    margin: 20px 0;
+  }
+  .resumeBox ul li{
+    font-size: 1.2em;
+    margin-left: 80px;
+  }
+
+  .resumeBox ul li p{
+    font-weight: 900;
+    display:inline;
+  }
+  
+  
+  
+  @media screen and (max-width: 960px) {
+    
+  
+  }
+  
+
+
+  @media screen and (max-width: 480px) {
+    .resumeBox {
+      padding: 30px 15px;  
+    }
+    .resumeBox strong{
+      color: rgb(63, 63, 201);
+      font-size: 1em;
+    }
+    .resumeBox ul li{
+      font-size: 0.8em;
+      margin-left: 25px;
+    }
+  }

@@ -1,0 +1,98 @@
+.move-up {
+    position: fixed;
+    margin-right: 50px;
+    cursor: pointer;
+    bottom: 30px;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    height: 45px;
+    line-height: 46px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .arrowUp ul {
+    position: fixed;
+    margin-right: 50px;
+    cursor: pointer;
+    bottom: 30px;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    height: 45px;
+    line-height: 46px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  
+  .arrowUp ul li {
+    list-style: none;
+    /* margin-right: 1rem; */
+    position: fixed;
+    z-index: 99999;
+    right: 0;
+    bottom: 125px;
+    padding: 5px;
+  }
+  
+  .arrowUp ul li .fa {
+    line-height: 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all .4s ease-in-out;
+  }
+  
+  .arrowUp ul li .fa:hover {
+    color: #ffffff;
+  }
+  
+  .arrowUp ul li b {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    /* background-color: white; */
+    background-color: rgba(0, 0, 0, 0.2);
+    outline-style: none !important;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .arrowUp ul li b:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    background-color: #232323;
+  }
+
+  @media screen and (max-width: 960px) {
+
+    .arrowUp ul li b {
+    
+      width: 30px;
+      height: 30px;
+      background-color: rgba(0, 0, 0, 0.1);
+     
+    }
+   
+    .arrowUp ul li {
+      list-style: none;
+      margin-right: -2rem;
+    }
+    
+    .arrowUp ul li .fa {
+      line-height: 1px;
+      font-size: 1.2rem;
+    
+    }
+  
+ 
+  }
+
+  
