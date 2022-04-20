@@ -2,6 +2,7 @@ import React from "react";
 import "./ResumeStyle.css";
 import '../../App.css';
 import Footer from '../Footer/Footer';
+import { motion } from "framer-motion";
 
 
 function Resume() {
@@ -10,7 +11,15 @@ function Resume() {
     <>
 
       <div className="resume">
-          <h1>My Resume</h1>     
+        <motion.div className='text_title'
+          initial={{y: 100, opacity: 0}}
+          animate={{y: 0, opacity: 1}}
+          transition={{duration: 0.7}}
+        >
+          <h1 className="text__title">My Resume</h1>
+          <h5 className="text__title">This page tells the best, most up to date story about me and my career. However, if you need</h5>
+          <h5 className="text__title">a plain resume in a standard format, feel free to reach out to me for the most recent version</h5>
+        </motion.div>   
       </div>
 
        
@@ -37,7 +46,7 @@ function Resume() {
           <li><p>Language:</p> C/C++, Python, Java, HTML, CSS</li>
           <li><p>CI-CD Tools:</p> Jenkins, Git</li>
           <li><p>CM Tool:</p> Ansible</li>
-          <li><p>Frameworks:</p> Django, Vue.js, react</li>
+          <li><p>Frameworks:</p> Django, react</li>
           <li><p>Operating Systems:</p> Operating Systems: Windows server, RHEL, UNIX, Centos, Ubuntu </li>    
         </ul>
         <strong>EDUCATION</strong>

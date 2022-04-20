@@ -14,6 +14,8 @@ const Card = (props) => {
   } else {
     document.body.classList.remove("active-modal")
   }
+
+  
   return (
     <>
       <div className='box btn_shadow '>
@@ -46,8 +48,9 @@ const Card = (props) => {
               <span>Featured - Design</span>
               <h1>{props.title}</h1>
 
-              {/* <p>{props.desc_one}</p> */}
-              {/* <p>{props.desc_two}</p> */}
+              <p>{props.desc_one}</p>
+              
+              <p>{props.desc_two}</p>
 
               <div className='button f_flex mtop'>
                 <button className='btn_shadow'>

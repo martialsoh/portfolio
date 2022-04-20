@@ -4,6 +4,7 @@ import './NavbarStyle.css';
 
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -35,7 +36,12 @@ function Navbar() {
     
     <nav className={navbar ? "navbar active" : "navbar"}>
     
-      <div className='navbar-container'>
+      <motion.div className='navbar-container'
+         initial={{y: -250}}
+         animate={{y: 0}}
+         transition={{duration: 0.5}}
+      >
+
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           <DiCssdeck size="2rem" /> GUY SOH
           <i class='fab fa-typo3' />
@@ -67,7 +73,7 @@ function Navbar() {
           </li>
 
         </ul>
-      </div>
+      </motion.div>
     </nav>
     
   );

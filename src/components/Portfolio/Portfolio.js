@@ -1,63 +1,43 @@
-import React from 'react';
+import React from "react"
 import '../../App.css';
 import "./PortfolioStyle.css";
-import CardItem from './CardItem';
+import Card from "./Card"
+import Portfolio_data from "./data"
 import Footer from '../Footer/Footer';
+import { motion } from "framer-motion";
 
 
-function Portfolio() {
-
+const Portfolio1 = () => {
   return (
     <>
+
       <div className='portfolio'>
-        <h1>Portfolio</h1>
+        <motion.div className='text_title'
+          initial={{y: 100, opacity: 0}}
+          animate={{y: 0, opacity: 1}}
+          transition={{duration: 0.7}}
+        >
+          <h1 className="text__title">My Portfolio</h1>
+          <h5 className="text__title">Visit my portfolio and keep your feedback </h5>
+        </motion.div>
       </div>
 
+      <section className='Portfolio top' id='Portfolio'>
+        <div className='container3'>
+          <div className='content grid'>
+            {Portfolio_data.map((value, index) => {
+              return <Card key={index} image={value.image} category={value.category} totalLike={value.totalLike} title={value.title} desc_one={value.desc_one} desc_two={value.desc_two}/>
+            })}
 
-
-      <div className='Portfolio_container1'>
-        <div className='cards'>
-          <h1>Check out my Portfolio</h1>
-          <div className='card-container'>
-            
-              <CardItem
-                src='images/img-9.jpg'
-                // text='Deploy an application (with high availability) with a database'
-              />
-              <CardItem
-                // src='images/img-2.jpg'
-                src='images/bougie.png'
-                // text='Get your dockerized Django App up into the Cloud - Django Deployment + Postgres'
-              />
-              <CardItem
-                src='images/img-6.jpg'
-                // text='Create a monitoring dashboard for an application'
-              />
-
-              <CardItem
-                src='images/img-3.jpg'
-                // text='Create and run a CI/CD pipeline for an app'
-              />
-              <CardItem
-                src='images/img-4.jpg'
-                // text='Create an application with an API and deploy it to Kubernetes'
-              />
-              <CardItem
-                src='images/img-8.jpg'
-                // text='create a system to analyze and visualised the logs data'
-              />
-            
           </div>
-        </div> 
-      </div>
+        </div>
+      </section>
       
-      
-      <Footer />
-      
-      
-
+      <section>
+       <Footer />
+      </section>
     </>
-  );
+  )
 }
 
-export default Portfolio;
+export default Portfolio1

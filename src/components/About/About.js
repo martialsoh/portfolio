@@ -1,19 +1,28 @@
 import React from "react";
 import "./AboutStyle.css";
+import {FaInstagram, FaTwitter, FaLinkedinIn, FaGithub} from 'react-icons/fa';
 
 
 function About() {
     return (
-      <div className="a">
+      <div className="about">
         <div className="a-left">
-          <div className="a-card bg"></div>
-          <div className="a-card">
-            <img
-              src='images/martial.png'
-              alt=""
-              className="a-img"
-            />
-          </div>
+            <div className="a-card bg"></div>
+            <div className="a-card">
+              <img
+                src='images/martial.png'
+                alt=""
+                className="a-img"
+              />
+            </div>
+            <div class="social-menu1">
+              <ul>    
+                <li><a href="http://www.linkedin.com/in/guy-mouafo-67b94a223" target="_blank" rel="noreferrer noopener"><i className="fa fa-linkedin"><FaLinkedinIn /></i></a></li>
+                <li><a href="https://twitter.com/yancraft237" target="_blank" rel="noreferrer noopener"><i className="fa fa-twitter"><FaTwitter /></i></a></li>
+                <li><a href="https://www.instagram.com/martial.soh/" target="_blank" rel="noreferrer noopener"><i className="fa fa-instagram"><FaInstagram /></i></a></li>
+                <li><a href="https://github.com/martialsoh" target="_blank" rel="noreferrer noopener"><i className="fa fa-github"><FaGithub /></i></a></li>
+              </ul>        
+            </div>
         </div>
         <div className="a-right">
           <h1 className="a-title">About Me</h1>
@@ -32,7 +41,7 @@ function About() {
           <div className="a-award">
             <img src='images/award.png' alt="" className="a-award-img" />
             <div className="a-award-texts">
-              <h4 className="a-award-title">International Design Awards 2021</h4>
+              {/* <h4 className="a-award-title">International Design Awards 2021</h4> */}
               <p className="a-award-desc">
                 Achivement award from different organizations.
               </p>

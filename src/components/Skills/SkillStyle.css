@@ -2,7 +2,6 @@
 	text-align: center;
 	padding: 40px 0px;
 	background-color: #e6e7ee;
-	/* background-color: #111E64; */
 	width: 100%;
 }
 
@@ -38,19 +37,22 @@
 	font-size: 13px;
 }
 
+.skill-image {
+	background: #111E64;
+	padding-bottom: 1px;
+}
 
 .tags {
 	text-align: center;
-	padding: 20px 0px;
-	background-color: rgb(46, 45, 45);;
+	padding: 30px 0px;
+	padding-bottom: 50px;
 }
 
 .tools-intro {	
 	text-align: center;
 	color:#eee;
 	font-size: 40px;
-	padding: 10px 0px;
-	background-color: rgb(46, 45, 45);
+	padding-bottom: 40px;
 }
 
 .tag {
@@ -65,7 +67,9 @@
 .active {
 	font-weight: bold;
 	border-bottom: 2px solid #eee;
+	
 }
+
 .skills-container {
 	width: 80%;
 	margin: auto;
@@ -89,8 +93,7 @@
 }
 
 .image:hover {
-	transform: scale(1.1);
-	
+	transform: scale(1.2);	
   }
 
 

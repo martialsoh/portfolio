@@ -1,0 +1,58 @@
+const data1 = [
+	{
+	  id: 1,
+	  category: "Deployment Automation",
+	  totalLike: "600",
+	  title: "The services provide for design ",
+	  desc_one: "Kubernetes is quickly became the standard way to manage application containers in the production environment. Amazon Elastic Container Service for Kubernetes (Amazon EKS) makes the Kubernetes cluster set-up easy and quickly deployable.",
+	  desc_two: "Infrastructure running on Amazon EKS is secure by default by setting up a secure and encrypted communication channel between worker nodes & Kubernetes endpoint.",
+	  image: "./images/AWS_EKS.png",
+	},
+	{
+	  id: 2,
+	  category: "MONITORING",
+	  totalLike: "750",
+	  title: "Prometheus Monitoring Server with a Grafana Dashboard",
+
+	  desc_one: "Running complex applications on actual servers is complicated and things can go haywire for several reasons. so it is necessary to monitor your systems and services to keep check of their health.",
+	//   desc_two: "2 Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!",
+	  image: "./images/monitoring.png",
+	},
+	{
+	  id: 3,
+	  category: "DOCKER",
+	  totalLike: "630",
+	  title: "Containerize Python Application using Docker & deploy",
+      desc_one: "Deploying Python Application using Docker and Kubernetes. build docker image of the web app and use Kubernetes to efficiently deploy and scale application, seamlessly rolling out new features while limiting resources to only those required.",
+	//   desc_two: "3 Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!",
+	  image: "./images/DockerProject.jpg",
+	},
+	{
+	  id: 4,
+	  category: "CI/CD",
+	  totalLike: "360",
+	  title: "Pipeline that integrates CI/CD",
+	  desc_one: "Continuous Integration & Continuous Delivery Commonly referred to as CI / CD. Implemented automated and continuous testing as well as automatic deployments on successful build of the master branch. ",
+	//   desc_two: "4 Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!",
+	  image: "./images/Automating_webapp.png",
+	},
+	{
+	  id: 5,
+	  category: "logs",
+	  totalLike: "280",
+	  title: "Check production logs",
+	  desc_one: "ELK stands for Elasticsearch, Logstash, and Kibana. Together providing a solution to the common problem, ie. efficiently store, search and visualize large text files or logs.",
+	  desc_two: "Elasticsearch offers multi-node (scalable) distributed search and analytics engine. Logstash can receive logs or text files from different sources, transform it, and send it Elasticsearch. Kibana gives a UI to Elasticsearch, using which you can visualize and navigate the data stored in Elasticsearch.",
+	  image: "./images/ELK.png",
+	},
+	{
+	  id: 6,
+	  category: "WEB DESIGN",
+	  totalLike: "690",
+	  title: "Web landing design & maintain",
+    //   desc_one: " 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.",
+	//   desc_two: "6 Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!",
+	  image: "./images/bougie.png",
+	},
+  ]
+  export default data1

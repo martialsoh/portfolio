@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Resume from "./components/Resume/Resume";
-import Portfolio from "./components/Portfolio/Portfolio1";
+import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import ScrollPage from './components/Scroll/ScrollPage';

@@ -90,8 +90,7 @@ function ContactForm() {
     
             <div className="contact__meta">
                 <h1 className="hire__text">Contact With Me.</h1>
-                <p className="hire__text white">Feel free to reach out to me at anytime. </p>
-                <p className="hire__text white">I am available for consulting, contract or other opportunities on short to medium range notice.</p>
+                <p className="hire__text white">Use the form below to send a message  </p>
             </div>
 
             <form className='Form' ref={form} id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>    
@@ -163,7 +162,6 @@ function ContactForm() {
                         <textarea className='Textarea' 
                         type="message" 
                         name="message" rows="5"
-                        name='message'
                         {...register('message', {
                             required: true
                         })} 
