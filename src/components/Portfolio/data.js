@@ -1,4 +1,4 @@
-const data1 = [
+const data = [
 	{
 	  id: 1,
 	  category: "Deployment Automation",
@@ -55,4 +55,4 @@ const data1 = [
 	  image: "./images/bougie.png",
 	},
   ]
-  export default data1
+  export default data

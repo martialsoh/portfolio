@@ -48,27 +48,22 @@ function ContactForm() {
     
           // Define template params
 
-        //   const templateParams = {
-        //     name,
-        //     email,
-        //     subject,
-        //     message
-        //   };
+          const templateParams = {
+            name,
+            email,
+            subject,
+            message
+          };
 
             
 
             emailjs
             .sendForm(
-                // process.env.REACT_APP_SERVICE_ID,
-                // process.env.REACT_APP_TEMPLATE_ID,
-                // form.current,
-                // process.env.REACT_APP_USER_ID,
-                // templateParams,
-
-                "gmail",
-                "template_c9t05x6",
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
                 form.current,
-                "user_GT3OUcc6ScHGKLWXMzXLu"
+                process.env.REACT_APP_USER_ID,
+                templateParams,
             )
             
     
@@ -177,9 +172,6 @@ function ContactForm() {
             <ToastContainer />
         </div>
             
-       
-        
-
     )
 }
 

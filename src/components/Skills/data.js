@@ -1,4 +1,4 @@
-export default [
+const data = [
 	{ id: '1', imageName: 'amazon-web-services.png', tag: 'DevOps' },
 	{ id: '2', imageName: 'docker.png', tag: 'DevOps' },
 	{ id: '3', imageName: 'k8s.png', tag: 'DevOps' },
@@ -19,3 +19,5 @@ export default [
     { id: '18', imageName: 'Python.png', tag: 'Code' },
     { id: '19', imageName: 'html5.png', tag: 'Code' },
 ];
+
+export default data

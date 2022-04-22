@@ -5,7 +5,6 @@ import images from './data';
 // import { SRLWrapper } from 'simple-react-lightbox';
 
 
-
 function Skills() {
 	const [tag, setTag] = useState('all');
 	const [filteredImages, setFilteredImages] = useState([]);
@@ -74,7 +73,7 @@ function Skills() {
 				<div className="skills-container">
 					{filteredImages.map(image => (
 						<div key={image.id} className="image-card">
-							<a>
+							<a href={() => false}>
 								<img className="image" src={`/images/${image.imageName}`} alt="" />
 							</a>
 						</div>
