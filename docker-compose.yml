@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+
+  my_portfolio_image:
+    container_name: my_portfolio_image
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    env_file:
+    - .env
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3001:3000
